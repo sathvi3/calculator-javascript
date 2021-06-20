@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="display-area">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <div class="button-area">
+        <div class="buttons">
+          <button data-clear class="btn clr-btn">C</button>
+          <button data-delete class="btn delete-btn">
+            <i class="fas fa-backspace"></i>
+          </button>
+          <button data-operation class="btn operator">&divide;</button>
+
+          <button data-number class="btn number">7</button>
+          <button data-number class="btn number">8</button>
+          <button data-number class="btn number">9</button>
+          <button data-operation class="btn operator">&times;</button>
+
+          <button data-number class="btn number">4</button>
+          <button data-number class="btn number">5</button>
+          <button data-number class="btn number">6</button>
+          <button data-operation class="btn operator">&minus;</button>
+
+          <button data-number class="btn number">1</button>
+          <button data-number class="btn number">2</button>
+          <button data-number class="btn number">3</button>
+          <button data-operation class="btn operator">&plus;</button>
+
+          <button data-number class="btn number zero-btn">0</button>
+          <button data-number class="btn number">.</button>
+          <button data-equals class="btn operator">&equals;</button>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
